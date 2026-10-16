@@ -1,0 +1,38 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+#qustion posting
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "title":"ist a number",
+    "language":"python",
+    "Difficalty_level":"easy",
+    "topic":"loop",
+    "note":"this is a sample question",
+    "sample_input":"1",
+    "sample_output":"2",
+    "is_active":true
+
+}
+###
+GET http://127.0.0.1:8000/questions/4/
+Accept: application/json
+###
+PUT http://127.0.0.1:8000/questions/3/
+Content-Type: application/json
+
+{
+    "title":"febnoci series ",
+    "language":"python",
+    "Difficalty_level":"easy",
+    "topic":"loop",
+    "note":"this is a sample program",
+    "sample_input":"1",
+    "sample_output":"2",
+    "is_active":true
+}
+###
+DELETE http://127.0.0.1:8000/questions/4/
